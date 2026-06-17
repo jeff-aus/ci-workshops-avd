@@ -130,6 +130,15 @@ local_users:
   sha512_password: $6$ffa0115a3c828b71$emRa0TJsYte2MvdcsfFQQ2NRXxcH2ZU4VDLFl8LP8TIbaiDF6jq8eyrhih4ZKbDK3tmaDIQJT9YgZoEA04H3x/
   ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQOHfB25KlJHYQM9ZOKirvzW1f9if0lZOFMv3nqqFURnladmNplI9ZzGEjYHybXbnkz5sRsUubQt5QrxdzCMs+85zIGmbAcGJ61b5TmkLCuvu02s22P7Xfjv2teRIwKGnFdG2YFsqOydB+uADxxMZsHt2wF24BfOdUgTPxSAeT/d8NsMjvvY156xkzyCg4W7f/NPEtVBFub0UhZ4Mk1mcOAJ0yYj0E0AcnuzIJGrtPAfLFCdfCNMUEuq+2UZ7q2qWj/9e++iwyntTPsbNhHfLy8AXC1E84M10p+gtoT6MJPYvSAIBDw/WUAxxnDifzuf+BGM22AgiDko8YJ6t+AXUt
     arista@avd-workshop-brisbane-12-dec73129-eos
+logging:
+  vrfs:
+  - name: default
+    source_interface: Management0
+    hosts:
+    - name: 10.200.0.108
+      protocol: udp
+    - name: 10.200.1.108
+      protocol: udp
 loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
